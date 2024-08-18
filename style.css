@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: sans-serif;
+    background-color: rgba(67, 101, 139, 0.747);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* Definindo a animação de movimento */
+@keyframes move {
+    0% {
+        transform: translateX(0); /* Começa na posição original */
+    }
+    50% {
+        transform: translateX(100px); /* Move 100px para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Volta à posição original */
+    }
+}
+
+/* Estilizando o h1 e aplicando a animação */
+h2 {
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    animation: move 5s ease-in-out infinite; /* 3s para uma animação completa, ease-in-out para suavidade, infinite para repetir indefinidamente */
+}
+
+img {
+    width: 285px;
+    height: 270px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+/* Definindo a animação de movimento */
+@keyframes move {
+    0% {
+        transform: translateX(0); /* Começa na posição original */
+    }
+    50% {
+        transform: translateX(100px); /* Move 100px para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Volta à posição original */
+    }
+}
+
+
+
+
+
+
+h2 {
+    box-shadow: #0dd8fc 0px 3px 8px;
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#first {
+    margin-top: 20px;
+    width: 500px;
+    box-shadow: #0dd8fc 0px 3px 8px;
+    background: #000000;
+    padding: 20px;
+    color: rgb(255, 228, 228);
+    display: flex;
+    flex-direction: column;
+
+}
+
+#title {
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+#second {
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background: #000000;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer a {
+    box-shadow: #0dd8fc 0px 3px 8px;
+    padding: 12px;
+    font-size: 20px;
+    color: hwb(216 0% 0%);
+    text-decoration: none;
+    border: 1px solid #000000;
+    margin: 20px;
+}
+
+footer a:hover {
+    
+    background: hwb(209 5% 24%);
+    color: #7bff00;
+}
+
+
+
+
+/* Estilizando o body para centralizar o h1 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:89vh; /* Ocupa toda a altura da tela */
+    margin: 0;
+    background-color: #000000c5; /* Fundo preto para destacar o efeito RGB */
+}
+
+/* Definindo a animação RGB */
+@keyframes rgbAnimation {
+    0% {
+        color: rgb(255, 0, 0); /* Vermelho */
+    }
+    14% {
+        color: rgb(255, 127, 0); /* Laranja */
+    }
+    28% {
+        color: rgb(255, 255, 0); /* Amarelo */
+    }
+    42% {
+        color: rgb(0, 255, 0); /* Verde */
+    }
+    57% {
+        color: rgb(0, 255, 255); /* Ciano */
+    }
+    71% {
+        color: rgb(0, 0, 255); /* Azul */
+    }
+    85% {
+        color: rgb(127, 0, 255); /* Roxo */
+    }
+    100% {
+        color: rgb(255, 0, 0); /* Volta ao Vermelho */
+    }
+}
+
+/* Estilizando o h1 e aplicando a animação */
+h1 {
+    box-shadow: #0dd8fc 0px 3px 8px;
+    font-size: 4rem; /* Tamanho grande para impacto */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(255, 255, 255); /* Sombra do texto para dar um efeito de brilho */
+    animation: rgbAnimation 6s linear infinite; /* Animação de 6 segundos, linear e infinita */
+}
